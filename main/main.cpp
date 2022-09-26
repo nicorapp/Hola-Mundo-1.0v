@@ -1,12 +1,25 @@
-#include <cstdlib>
+
+#include <cstdlib>  //en main.cpp solo va el main no la implementacion de funciones
 #include <iostream>
-
 #include "example.h"
+#include "math.h"
 
-int main(int argc, char** argv)
+using namespace std;
+
+int main()
 {
-    foobar::Example example{};
-    std::cout << "Example.getValue() => " << example.getValue() << std::endl;
+	int a, b, c;
+	double raiz1 = 0, raiz2 = 0;
 
-    return EXIT_SUCCESS;
+	cout << "Introduzca un valor para a: ";
+	cin >> a;
+	cout << "Introduzca un valor para b: ";
+	cin >> b;
+	cout << "Introduzca un valor para c: ";
+	cin >> c;
+	resolvente(a, b, c, raiz1, raiz2);
+
+	cout << "La primera raiz es:" << raiz1 << " y la segunda raiz es:" << raiz2 << ".  " << endl;
+
+	return (0);
 }

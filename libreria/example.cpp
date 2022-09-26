@@ -1,27 +1,25 @@
-#include "example.h"
+
+#include <cstdlib>  //en main.cpp solo va el main no la implementacion de funciones
 #include <iostream>
-#include <string>
+#include "example.h"
 #include "math.h"
+
 using namespace std;
 
-namespace foobar
+int main()
 {
-    int Example::getValue() const
-    {
-        double a, b, c, r1, r2;
-        cout << "Introduzca un valor para a: ";
-        cin >> a;
-        cout << "Introduzca un valor para b: ";
-        cin >> b;
-        cout << "Introduzca un valor para c: ";
-        cin >> c;
-        r1 = (-b + sqrt((b * b) - (4 * a * c))) / (2 * a);
-        r2= (-b + sqrt((b * b) - (4 * a * c))) / (2 * a);
-        if (((b * b) - (4 * a * c)) <= 0)
-        {
-            cout << "ERROR!";
-        }
-        cout << "Las raices son: " << r1 << " y " << r2;
-        return 0;
-    }
+	int a, b, c;
+	double raiz1 = 0, raiz2 = 0;
+
+	cout << "Introduzca un valor para a: ";
+	cin >> a;
+	cout << "Introduzca un valor para b: ";
+	cin >> b;
+	cout << "Introduzca un valor para c: ";
+	cin >> c;
+	resolvente(a, b, c, raiz1, raiz2);
+
+	cout << "La primera raiz es:" << raiz1 << " y la segunda raiz es:" << raiz2 << ".  " << endl;
+
+	return (0);
 }
