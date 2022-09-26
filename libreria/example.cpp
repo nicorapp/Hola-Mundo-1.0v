@@ -6,20 +6,21 @@
 
 using namespace std;
 
-int main()
+void resolvente(int a, int b, int c, double& raiz1, double& raiz2)
 {
-	int a, b, c;
-	double raiz1 = 0, raiz2 = 0;
+	double a, b, c, raiz1, raiz2, discriminante;
 
-	cout << "Introduzca un valor para a: ";
-	cin >> a;
-	cout << "Introduzca un valor para b: ";
-	cin >> b;
-	cout << "Introduzca un valor para c: ";
-	cin >> c;
-	resolvente(a, b, c, raiz1, raiz2);
+	discriminante = pow(b, 2) - 4 * a * c;
 
-	cout << "La primera raiz es:" << raiz1 << " y la segunda raiz es:" << raiz2 << ".  " << endl;
-
-	return (0);
+	if (discriminante >= 0)
+	{
+		raiz1 = (-b + sqrt(discriminante)) / (2 * a);
+		raiz2 = (-b - sqrt(discriminante)) / (2 * a);
+	}
+	else
+	{
+		cout << "la ecuacion no tiene raices reales" << endl;
+	}
+	//copie los codigos del borrador
+	//no hace falta retornar los valores porque ya se me guardaron al poner la posicion de memoria
 }

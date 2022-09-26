@@ -22,4 +22,5 @@ int main()
 	cout << "La primera raiz es:" << raiz1 << " y la segunda raiz es:" << raiz2 << ".  " << endl;
 
 	return (0);
+	//copio los codigos del borrador
 }
