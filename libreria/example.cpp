@@ -8,7 +8,7 @@ using namespace std;
 
 void resolvente(int a, int b, int c, double& raiz1, double& raiz2)
 {
-	double a, b, c, raiz1, raiz2, discriminante;
+	double  discriminante;
 
 	discriminante = pow(b, 2) - 4 * a * c;
 
