@@ -28,7 +28,7 @@ add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
                  EXCLUDE_FROM_ALL)
 
 # Now simply link against gtest or gtest_main as needed. Eg
-add_executable(unit-test example.cpp)
+add_executable(unit-test Testeos.cpp)
 target_link_libraries(unit-test libreria gmock_main)
 
 gtest_discover_tests(unit-test)

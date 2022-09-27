@@ -1,12 +1,9 @@
-
-#include <cstdlib>  //en main.cpp solo va el main no la implementacion de funciones
-#include <iostream>
-#include "example.h"
+#include "Prototipos.h"//aca van las IMPLEMENTACIONES de funciones
 #include "math.h"
-
+#include <iostream>
 using namespace std;
 
-void resolvente(int a, int b, int c, double& raiz1, double& raiz2)
+void resolvente(int a, int b, int c, double *&raiz1, double *&raiz2)
 {
 	double  discriminante;
 
@@ -14,8 +11,8 @@ void resolvente(int a, int b, int c, double& raiz1, double& raiz2)
 
 	if (discriminante >= 0)
 	{
-		raiz1 = (-b + sqrt(discriminante)) / (2 * a);
-		raiz2 = (-b - sqrt(discriminante)) / (2 * a);
+		*raiz1 = (-b + sqrt(discriminante)) / (2 * a);
+		*raiz2 = (-b - sqrt(discriminante)) / (2 * a);
 	}
 	else
 	{

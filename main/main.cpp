@@ -1,7 +1,7 @@
 
 #include <cstdlib>  //en main.cpp solo va el main no la implementacion de funciones
 #include <iostream>
-#include "example.h"
+#include "Prototipos.h"
 #include "math.h"
 
 using namespace std;
@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	int a, b, c;
-	double raiz1 = 0, raiz2 = 0;
+	double *raiz1 = 0, *raiz2 = 0;
 
 	cout << "Introduzca un valor para a: ";
 	cin >> a;
