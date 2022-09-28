@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-void resolvente(int a, int b, int c, double *&raiz1, double *&raiz2)
+void resolvente(int a, int b, int c, double&* raiz1, double&* raiz2)
 {
 	double  discriminante;
 
