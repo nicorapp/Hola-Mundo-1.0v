@@ -2,6 +2,4 @@
 
 #include "Prototipos.h"
 
-#include "Distancia.h"
-
 using namespace testing;
